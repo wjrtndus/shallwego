@@ -1,0 +1,47 @@
+
+
+.join-wrap{
+    width: 500px;
+    margin: 50px auto;
+}
+
+.join{
+    width: 500px;
+    float: left;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.join-wrap .join li{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.join-wrap .join li h1{
+    margin-bottom: 30px;
+}
+
+.join-wrap .join li p{
+    margin-bottom: 5px;
+}
+
+.desh{
+    float: left;
+    padding: 0 7px;
+    line-height: 35px;
+}
+
+.join-wrap .join .email .btn04, .join-wrap .join .email-cf .btn04{
+    padding: 16px 0;
+    float: left;
+    margin-left: 15px;
+}
+
+.email-cf{
+    display: none;
+}
+
