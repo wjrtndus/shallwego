@@ -3,7 +3,7 @@
 		"-//mybatis.org//DTD Mapper 3.0//EN" 
 		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 		
-<mapper namespace="com.itbank.shallwego.ShallWeGoDAO">
+<mapper namespace="com.itbank.shallwego.AccommDAO">
 	
 <!-- 	<insert id="insertMember" parameterType="swgdto">
 		insert into shallwego
@@ -27,6 +27,21 @@
 		    	or 
 		    	pnum like '%'||#{search}||'%'
 	</select> -->
+	
+<!-- 	<select id="login" parameterType="swgdto" resultType="swgdto"> -->
+<!-- 		select * from customer -->
+<!-- 			where userid=#{userid} and  -->
+<!-- 			userpw=#{userpw} -->
+<!-- 	</select> -->
+	
+	<insert id="insertAccomm" parameterType="accomm">
+		insert into accomm
+			values (ACCOMM_SEQ.nextval, #{accomm_name}, #{accomm_type},
+				#{accomm_address}, #{accomm_checkin}, #{accomm_checkout},
+				#{accomm_img}, #{accomm_intro}, '0',
+				#{usage_guide}, #{reservation_notice}, #{accomm_event},
+				'0')
+	</insert>
 	
 </mapper>
 

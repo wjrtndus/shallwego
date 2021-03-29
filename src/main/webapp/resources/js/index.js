@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	const cpath = '${cpath}';
 
     var ww = $(window).width();
     var wh = $(window).height();
@@ -183,6 +184,45 @@ $(".local-label li").click(function(){
     $(".local-wrap-in").removeClass("lo-on");
     $(".local-wrap-in").eq(i).addClass("lo-on"); 
 });
+
+//$(document).ready(function () {
+//	$('.accomm').click(function(){
+//		$(".accomm").removeClass('');
+//	});
+//});
+
+$('.btn100').click(function(){
+	const cpath = '${cpath}';
+	
+	const res = {
+		userid: $('#userid').val(),
+		userpw: $('#userpw').val()
+	};
+	const rjson = JSON.stringify(res);
+	
+	$.ajax({
+		url: '${pageContext.request.contextPath}/',
+		method: 'POST',
+		data: rjson,
+		dataType: 'json',
+		contentType: 'application/json',
+		success: function(returnValue){
+			console.log('suc');
+			console.log(returnValue);
+			location.href='${pageContext.request.contextPath}/';
+		},
+		error: function(){
+			console.log('fail');
+		},
+	});
+});
+
+
+// 관리자 로그인시 숙소등록 버튼 활성화
+
+
+
+
 
 
 //     // date

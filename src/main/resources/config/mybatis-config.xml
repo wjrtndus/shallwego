@@ -12,5 +12,6 @@
 	
 	<typeAliases>
 		<typeAlias type="com.itbank.shallwego.ShallWeGoDTO" alias="swgdto" />
+		<typeAlias type="com.itbank.shallwego.AccommDTO" alias="accomm" />
 	</typeAliases>
 </configuration>

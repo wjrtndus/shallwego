@@ -17,8 +17,8 @@
                             <p>내손안의 여행, 떠나볼까?</p>
                         </li>
                         <li>
-                            <input class="text01" type="text" placeholder="아이디를 입력하세요."/>
-                            <input class="text01" type="text" placeholder="비밀번호를 입력하세요."/>
+                            <input id="userid" class="text01" type="text" placeholder="아이디를 입력하세요."/>
+                            <input id="userpw" class="text01" type="text" placeholder="비밀번호를 입력하세요."/>
                         </li>
                         <li>
                             <button class="btn100">로그인</button>

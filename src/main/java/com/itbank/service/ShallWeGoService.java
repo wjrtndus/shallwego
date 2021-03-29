@@ -24,5 +24,9 @@ public class ShallWeGoService {
 		String dbId = dao.selectId(userId);
 		return dbId != null;
 	}
+
+	public ShallWeGoDTO login(ShallWeGoDTO dto) {
+		return dao.login(dto);
+	}
 	
 }

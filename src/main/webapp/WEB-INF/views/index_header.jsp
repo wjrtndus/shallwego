@@ -10,6 +10,7 @@
             <div class="header-in">
                 <div class="logo"><a href="${cpath }/index"><img src="${cpath }/resources/img/logo/logo.png"/></a></div>
                 <ul class="menu">
+                    <li class="accomm" style=""><a href="${cpath }/admin/accomm">숙소 등록</a></li>
                     <li class="customer-btn">
                         고객센터 ▾
                         <ul class="customer">
