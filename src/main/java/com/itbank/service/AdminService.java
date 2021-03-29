@@ -14,7 +14,6 @@ public class AdminService {
 
 	public int insertAccomm(AccommDTO input) {
 		
-		
 		return dao.insertAccomm(input);
 	}
 

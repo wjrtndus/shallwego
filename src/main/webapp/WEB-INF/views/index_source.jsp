@@ -24,7 +24,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     
-    <script src="${cpath }/resources/js/index_header.js"></script>
+    <%-- <script src="${cpath }/resources/js/index_header.js"></script> --%>
     <script src="${cpath }/resources/js/index.js"></script>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">

@@ -21,7 +21,7 @@ public class AccommDTO {
 	
 	private int accomm_idx, accomm_type;
 	private String accomm_name, accomm_address, accomm_img, accomm_intro, usage_guide, reservation_notice, accomm_event, accomm_notice, cf_idx;
-	private Date accomm_checkin, accomm_checkout;
+	private String accomm_checkin, accomm_checkout;
 	
 	public int getAccomm_idx() {
 		return accomm_idx;
@@ -89,16 +89,17 @@ public class AccommDTO {
 	public void setCf_idx(String cf_idx) {
 		this.cf_idx = cf_idx;
 	}
-	public Date getAccomm_checkin() {
+	public String getAccomm_checkin() {
 		return accomm_checkin;
 	}
-	public void setAccomm_checkin(Date accomm_checkin) {
+	public void setAccomm_checkin(String accomm_checkin) {
 		this.accomm_checkin = accomm_checkin;
 	}
-	public Date getAccomm_checkout() {
+	public String getAccomm_checkout() {
 		return accomm_checkout;
 	}
-	public void setAccomm_checkout(Date accomm_checkout) {
+	public void setAccomm_checkout(String accomm_checkout) {
 		this.accomm_checkout = accomm_checkout;
 	}
+	
 }

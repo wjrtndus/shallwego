@@ -185,11 +185,17 @@ $(".local-label li").click(function(){
     $(".local-wrap-in").eq(i).addClass("lo-on"); 
 });
 
-//$(document).ready(function () {
-//	$('.accomm').click(function(){
-//		$(".accomm").removeClass('');
-//	});
-//});
+
+// 아이콘 체크박스 여부
+$('.sibal').click(function(event) {
+	event.preventDefault();
+	var checkArray = new Array();
+	$('input[class=cf]:checked').each(function() {
+		checkArray.push($(this).val());
+	});
+	console.log(checkArray);
+});
+
 
 $('.btn100').click(function(){
 	const cpath = '${cpath}';

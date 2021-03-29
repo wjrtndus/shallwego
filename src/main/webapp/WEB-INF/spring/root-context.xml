@@ -13,7 +13,7 @@
 		  destroy-method="close">
 		  
 		  <property name="driverClass" value="oracle.jdbc.driver.OracleDriver" />
-		  <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
+		  <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:32118:xe" />
 		  <property name="user" value="c##team3prac" />
 		  <property name="password" value="three" />
 		  <property name="maxPoolSize" value="100" />
