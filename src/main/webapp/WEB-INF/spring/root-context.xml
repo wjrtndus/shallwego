@@ -14,8 +14,8 @@
 		  
 		  <property name="driverClass" value="oracle.jdbc.driver.OracleDriver" />
 		  <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
-		  <property name="user" value="c##itbank" />
-		  <property name="password" value="it" />
+		  <property name="user" value="c##team3prac" />
+		  <property name="password" value="three" />
 		  <property name="maxPoolSize" value="100" />
 		  <property name="maxIdleTime" value="600" />
 		  <property name="idleConnectionTestPeriod" value="300" />
