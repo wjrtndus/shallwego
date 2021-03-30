@@ -18,7 +18,7 @@
 
 <div class="wrap">
     <div class="wrap-in">
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             <div class="insert_div_daddy">
                 <div class="insert_div">
                     <div class="insert_div_space1">NUMBER</div>

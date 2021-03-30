@@ -187,8 +187,7 @@ $(".local-label li").click(function(){
 
 
 // 아이콘 체크박스 여부
-$('.acmBtn').click(function(event) {
-	eventS.preventDefault();
+$('.acmBtn').click(function() {
 	var checkArray = new Array();
 	$('input[class=cf]:checked').each(function() {
 		checkArray.push($(this).val());

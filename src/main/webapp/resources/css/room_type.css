@@ -13,14 +13,15 @@ a{text-decoration: none; color: black;}
 }
 .insert_div {
     float: left;
-    margin-left: 450px;
+    margin-left: 700px;
     width: 100%;
     height: 50px;
     padding-bottom: 10px;
 }
 .submit_div {
     float: left;
-    margin-left: 650px;
+    margin-top: 20px;
+    margin-left: 890px;
     width: 100%;
     height: 50px;
 }
