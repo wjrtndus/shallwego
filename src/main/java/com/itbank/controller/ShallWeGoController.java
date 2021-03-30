@@ -37,6 +37,7 @@ public class ShallWeGoController {
 		System.out.println(user.getAccomm_checkin());
 		System.out.println(user.getAccomm_checkout());
 		System.out.println(user.getAccomm_intro());
+		System.out.println(user.getAccomm_img());
 		System.out.println(user.getCf_idx());
 		System.out.println(user.getUsage_guide());
 		System.out.println(user.getReservation_notice());

@@ -62,12 +62,13 @@
                 </div>
                 
                 <!-- 대표사진 아직  -->
-                <!-- <div class="insert_div">
+                <div class="insert_div">
                     <div class="insert_div_space1">숙소 대표사진</div>
                     <div class="insert_div_space2">
-                        <input multiple="multiple" class="insert_design" type="file" name="accomm_img">
+                        <input multiple="multiple" id="acc_img" class="insert_design" type="file">
+                        <input type="hidden" name="accomm_img" id="img_text">
                     </div>
-                </div> -->
+                </div>
                 <div class="insert_div2">
                     <div class="insert_div_space1">편의 시설들</div>
                     <div class="insert_div_space2">
@@ -138,6 +139,22 @@
 		</form>
     </div>
 </div>
+
+	<script>
+		$('.acmBtn').click(function(event){
+			event.preventDefault();
+// 			var f = $('#acc_img').val();
+// 			console.log(f);
+
+			
+			var files = $('input[id="acc_img"]')[0].files;
+			console.log(files);
+			for (var i = 0; i < files.length; i++) {
+				console.log('file_name :' + files[i].name);
+			}
+
+		});
+	</script>
 
 <!-- 	<script type="text/javascript">
 		$('#submitBtn').click(function(){
