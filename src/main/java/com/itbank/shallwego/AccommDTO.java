@@ -1,7 +1,5 @@
 package com.itbank.shallwego;
 
-import java.util.Date;
-
 public class AccommDTO {
 //	이름                 널?       유형             
 //	------------------ -------- -------------- 

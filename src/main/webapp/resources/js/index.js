@@ -187,8 +187,8 @@ $(".local-label li").click(function(){
 
 
 // 아이콘 체크박스 여부
-$('.sibal').click(function(event) {
-	event.preventDefault();
+$('.acmBtn').click(function(event) {
+	eventS.preventDefault();
 	var checkArray = new Array();
 	$('input[class=cf]:checked').each(function() {
 		checkArray.push($(this).val());
@@ -196,7 +196,7 @@ $('.sibal').click(function(event) {
 	console.log(checkArray);
 });
 
-
+// 로그인
 $('.btn100').click(function(){
 	const cpath = '${cpath}';
 	

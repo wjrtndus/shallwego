@@ -24,15 +24,29 @@ public class ShallWeGoController {
 		return "admin/accomm";
 	}
 	
+	@GetMapping("/admin/room_type")
+	public String room_type() {
+		return "admin/room_type";
+	}
+	
 	@PostMapping("/admin/accomm")
 	public String accomm(AccommDTO user) {
-		System.out.println(user.getAccomm_address());
 		System.out.println(user.getAccomm_type());
+		System.out.println(user.getAccomm_name());
+		System.out.println(user.getAccomm_address());
+		System.out.println(user.getAccomm_checkin());
+		System.out.println(user.getAccomm_checkout());
+		System.out.println(user.getAccomm_intro());
+		System.out.println(user.getCf_idx());
+		System.out.println(user.getUsage_guide());
+		System.out.println(user.getReservation_notice());
 		System.out.println(user.getAccomm_event());
 		
 		int row = as.insertAccomm(user);
 		
-		return row != 0 ? "성공" : "";
+		String msg = "<script>alert('오류 ㅠㅠ');location.href='/admin/accomm'</script>";
+		
+		return row != 0 ? "redirect:/admin/room_type" : msg;
 	}
 	
 }

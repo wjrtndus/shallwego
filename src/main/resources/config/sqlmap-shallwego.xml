@@ -38,7 +38,7 @@
 		insert into accomm
 			values (ACCOMM_SEQ.nextval, #{accomm_name}, #{accomm_type},
 				#{accomm_address}, #{accomm_checkin}, #{accomm_checkout},
-				'0', #{accomm_intro}, '0',
+				'0', #{accomm_intro}, #{cf_idx},
 				#{usage_guide}, #{reservation_notice}, #{accomm_event},
 				'0')
 	</insert>

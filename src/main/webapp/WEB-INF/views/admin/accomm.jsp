@@ -60,47 +60,49 @@
                         <textarea name="accomm_intro" class="insert_textarea" cols="40" rows="5"></textarea>
                     </div>
                 </div>
+                
+                <!-- 대표사진 아직  -->
                 <!-- <div class="insert_div">
-                    <div class="insert_div_space1">숙소 대표사진</div> 메인 이미지랑 숙소 별 이미지 생각
+                    <div class="insert_div_space1">숙소 대표사진</div>
                     <div class="insert_div_space2">
-                        <input class="insert_design" type="file" name="accomm_img">
+                        <input multiple="multiple" class="insert_design" type="file" name="accomm_img">
                     </div>
                 </div> -->
                 <div class="insert_div2">
                     <div class="insert_div_space1">편의 시설들</div>
                     <div class="insert_div_space2">
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="1,"><img class="icon_img" src="${cpath }/img/icon/wifi.png"></label>                
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="2,"><img class="icon_img" src="${cpath }/img/icon/car.png"></label>                
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="3,"><img class="icon_img" src="${cpath }/img/icon/smokingNo.png"></label>         
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="4,"><img class="icon_img" src="${cpath }/img/icon/smoking.png"></label>         
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="5,"><img class="icon_img" src="${cpath }/img/icon/fitness.png"></label>         
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="6,"><img class="icon_img" src="${cpath }/img/icon/swim.png"></label><br>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="7,"><img class="icon_img" src="${cpath }/img/icon/medicine.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="8,"><img class="icon_img" src="${cpath }/img/icon/city.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="9,"><img class="icon_img" src="${cpath }/img/icon/sunny.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="10,"><img class="icon_img" src="${cpath }/img/icon/mountain.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="11,"><img class="icon_img" src="${cpath }/img/icon/pc.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="12,"><img class="icon_img" src="${cpath }/img/icon/ocean.png"></label><br>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="13,"><img class="icon_img" src="${cpath }/img/icon/super.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="14,"><img class="icon_img" src="${cpath }/img/icon/moring.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="15,"><img class="icon_img" src="${cpath }/img/icon/twin.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="16,"><img class="icon_img" src="${cpath }/img/icon/double.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="17,"><img class="icon_img" src="${cpath }/img/icon/movie.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="18,"><img class="icon_img" src="${cpath }/img/icon/party.png"></label><br>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="19,"><img class="icon_img" src="${cpath }/img/icon/sing.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="20,"><img class="icon_img" src="${cpath }/img/icon/gamming.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="21,"><img class="icon_img" src="${cpath }/img/icon/restorang.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="22,"><img class="icon_img" src="${cpath }/img/icon/pickup.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="23,"><img class="icon_img" src="${cpath }/img/icon/playground.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="24,"><img class="icon_img" src="${cpath }/img/icon/teras.png"></label><br>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="25,"><img class="icon_img" src="${cpath }/img/icon/rivingroom.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="26,"><img class="icon_img" src="${cpath }/img/icon/puppy.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="27,"><img class="icon_img" src="${cpath }/img/icon/bock.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="28,"><img class="icon_img" src="${cpath }/img/icon/bicycle.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="29,"><img class="icon_img" src="${cpath }/img/icon/teras.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="30,"><img class="icon_img" src="${cpath }/img/icon/kitchen.png"></label><br>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="31,"><img class="icon_img" src="${cpath }/img/icon/gogi.png"></label>
-                        <label class="icon"><input type="checkbox" class="cf" id="" value="32,"><img class="icon_img" src="${cpath }/img/icon/spa.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="1"><img class="icon_img" src="${cpath }/img/icon/wifi.png"></label>                
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="2"><img class="icon_img" src="${cpath }/img/icon/car.png"></label>                
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="3"><img class="icon_img" src="${cpath }/img/icon/smokingNo.png"></label>         
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="4"><img class="icon_img" src="${cpath }/img/icon/smoking.png"></label>         
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="5"><img class="icon_img" src="${cpath }/img/icon/fitness.png"></label>         
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="6"><img class="icon_img" src="${cpath }/img/icon/swim.png"></label><br>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="7"><img class="icon_img" src="${cpath }/img/icon/medicine.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="8"><img class="icon_img" src="${cpath }/img/icon/city.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="9"><img class="icon_img" src="${cpath }/img/icon/sunny.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="10"><img class="icon_img" src="${cpath }/img/icon/mountain.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="11"><img class="icon_img" src="${cpath }/img/icon/pc.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="12"><img class="icon_img" src="${cpath }/img/icon/ocean.png"></label><br>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="13"><img class="icon_img" src="${cpath }/img/icon/super.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="14"><img class="icon_img" src="${cpath }/img/icon/moring.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="15"><img class="icon_img" src="${cpath }/img/icon/twin.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="16"><img class="icon_img" src="${cpath }/img/icon/double.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="17"><img class="icon_img" src="${cpath }/img/icon/movie.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="18"><img class="icon_img" src="${cpath }/img/icon/party.png"></label><br>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="19"><img class="icon_img" src="${cpath }/img/icon/sing.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="20"><img class="icon_img" src="${cpath }/img/icon/gamming.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="21"><img class="icon_img" src="${cpath }/img/icon/restorang.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="22"><img class="icon_img" src="${cpath }/img/icon/pickup.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="23"><img class="icon_img" src="${cpath }/img/icon/playground.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="24"><img class="icon_img" src="${cpath }/img/icon/teras.png"></label><br>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="25"><img class="icon_img" src="${cpath }/img/icon/rivingroom.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="26"><img class="icon_img" src="${cpath }/img/icon/puppy.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="27"><img class="icon_img" src="${cpath }/img/icon/bock.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="28"><img class="icon_img" src="${cpath }/img/icon/bicycle.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="29"><img class="icon_img" src="${cpath }/img/icon/teras.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="30"><img class="icon_img" src="${cpath }/img/icon/kitchen.png"></label><br>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="31"><img class="icon_img" src="${cpath }/img/icon/gogi.png"></label>
+                        <label class="icon"><input type="checkbox" name="cf_idx" class="cf" id="" value="32"><img class="icon_img" src="${cpath }/img/icon/spa.png"></label>
                     </div>
                 </div>
                 <div class="insert_div1">
@@ -121,16 +123,16 @@
                         <input class="insert_design" type="text" name="accomm_event">
                     </div>
                 </div>
-<!--                 <div class="insert_div"> -->
-<!--                     <div class="insert_div_space1">쿠폰</div> -->
-<!--                     <div class="insert_div_space2"> -->
-<!--                         <input class="insert_design" type="text" name=""> -->
-<!--                     </div> -->
-<!--                 </div> -->
+                <!-- <div class="insert_div">
+                    <div class="insert_div_space1">쿠폰</div>
+                    <div class="insert_div_space2">
+                        <input class="insert_design" type="text" name="">
+                    </div>
+                </div> -->
 
                 <!-- 버튼 -->
                 <div class="submit_div">
-                    <input class="sibal" type="submit" value="전송">
+                    <input class="acmBtn" type="submit" value="전송">
                 </div>
             </div>
 		</form>
