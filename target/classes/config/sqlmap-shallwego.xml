@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+		"-//mybatis.org//DTD Mapper 3.0//EN" 
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<mapper namespace="com.itbank.shallwego.AccommDAO">
+	
+<!-- 	<insert id="insertMember" parameterType="swgdto">
+		insert into shallwego
+			(userid, userpw, username, userpnum, useremail)
+		values
+			(#{userId}, #{userPw}, #{userName}, #{userPnum}, #{userEmail})
+	</insert> -->
+	
+<!-- 	<delete id="deletePhoneBook" parameterType="int">
+		delete phonebook where idx=#{idx}
+	</delete>
+	
+	<update id="updatePhoneBook" parameterType="pb">
+		update phonebook set name=#{name}, pnum=#{pnum} where idx=#{idx}
+	</update>
+	
+	<select id="selectSearchList" parameterType="string" resultType="pb">
+		select * from phonebook
+		    where 
+		    	name like '%'||#{search}||'%'
+		    	or 
+		    	pnum like '%'||#{search}||'%'
+	</select> -->
+	
+<!-- 	<select id="login" parameterType="swgdto" resultType="swgdto"> -->
+<!-- 		select * from customer -->
+<!-- 			where userid=#{userid} and  -->
+<!-- 			userpw=#{userpw} -->
+<!-- 	</select> -->
+	
+	<insert id="insertAccomm" parameterType="accomm">
+		insert into accomm
+			values (ACCOMM_SEQ.nextval, #{accomm_name}, #{accomm_type},
+				#{accomm_address}, #{accomm_checkin}, #{accomm_checkout},
+				#{accomm_img}, #{accomm_intro}, #{cf_idx},
+				#{usage_guide}, #{reservation_notice}, #{accomm_event},
+				'0')
+	</insert>
+	
+	<select id="selectOne" resultType="int" parameterType="string">
+		select accomm_idx from accomm
+			where accomm_name=#{accomm_name}
+	</select>
+	
+	<insert id="insertTier" parameterType="accomm">
+		insert into tier
+			values (TIER_SEQ.nextval, #{tier_number}, #{accomm_idx})
+	</insert>
+	
+</mapper>
+
+
+
+
+
